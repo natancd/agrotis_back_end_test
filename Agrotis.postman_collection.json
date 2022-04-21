@@ -1,0 +1,378 @@
+{
+	"info": {
+		"_postman_id": "b03c8557-6eb8-4ca3-a75d-09c29cf902e4",
+		"name": "Agrotis",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"nome\": \"natan alteracao put\",\r\n        \"observacoes\": \"\",\r\n        \"dataInicial\": \"2019-05-05T18:00:00\",\r\n        \"dataFinal\": \"2020-05-05T18:00:00\",\r\n        \"propriedade\": {\r\n            \"id\": 2,\r\n            \"nome\": \"Propriedade 2\",\r\n            \"cnpj\": \"22222222222222\"\r\n        },\r\n        \"laboratorio\": {\r\n            \"id\": 1,\r\n            \"nome\": \"Laboratório 1\"\r\n        }\r\n    }"
+				},
+				"url": {
+					"raw": "http://localhost:8081/registros",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"registros"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "01_AGROTIS_GET",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"nome\": \"natan alteracao put\",\r\n        \"observacoes\": \"\",\r\n        \"dataInicial\": \"2019-05-05T18:00:00\",\r\n        \"dataFinal\": \"2020-05-05T18:00:00\",\r\n        \"propriedade\": {\r\n            \"id\": 2,\r\n            \"nome\": \"Propriedade 2\",\r\n            \"cnpj\": \"22222222222222\"\r\n        },\r\n        \"laboratorio\": {\r\n            \"id\": 1,\r\n            \"nome\": \"Laboratório 1\"\r\n        }\r\n    }"
+				},
+				"url": {
+					"raw": "http://localhost:8081/registros",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"registros"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "02_AGROTIS_POST",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"nome\": \"natan ADD\",\r\n        \"observacoes\": \"\",\r\n        \"dataInicial\": \"2019-05-05T18:00:00\",\r\n        \"dataFinal\": \"2020-05-05T18:00:00\",\r\n        \"propriedade\": {\r\n            \"id\": 5,\r\n            \"nome\": \"Propriedade 5\",\r\n            \"cnpj\": \"55555555555555\"\r\n        },\r\n        \"laboratorio\": {\r\n            \"id\": 4,\r\n            \"nome\": \"Laboratório 4\"\r\n        }\r\n    }"
+				},
+				"url": {
+					"raw": "http://localhost:8081/registros",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"registros"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "03_AGROTIS_POST_ERROR",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"nome\": \"\",\r\n        \"observacoes\": \"\",\r\n        \"dataInicial\": \"2019-05-05T18:00:00\",\r\n        \"dataFinal\": null,\r\n        \"propriedade\": {\r\n            \"id\": 5,\r\n            \"nome\": \"Propriedade 5\",\r\n            \"cnpj\": \"55555555555555\"\r\n        },\r\n        \"laboratorio\": {\r\n            \"id\": 4,\r\n            \"nome\": \"Laboratório 4\"\r\n        }\r\n    }"
+				},
+				"url": {
+					"raw": "http://localhost:8081/registros",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"registros"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "04_AGROTIS_GET_UPDATED",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"nome\": \"\",\r\n        \"observacoes\": \"\",\r\n        \"dataInicial\": \"2019-05-05T18:00:00\",\r\n        \"dataFinal\": null,\r\n        \"propriedade\": {\r\n            \"id\": 5,\r\n            \"nome\": \"Propriedade 5\",\r\n            \"cnpj\": \"55555555555555\"\r\n        },\r\n        \"laboratorio\": {\r\n            \"id\": 4,\r\n            \"nome\": \"Laboratório 4\"\r\n        }\r\n    }"
+				},
+				"url": {
+					"raw": "http://localhost:8081/registros",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"registros"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "05_AGROTIS_GET_ID-2",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"nome\": \"\",\r\n        \"observacoes\": \"\",\r\n        \"dataInicial\": \"2019-05-05T18:00:00\",\r\n        \"dataFinal\": null,\r\n        \"propriedade\": {\r\n            \"id\": 5,\r\n            \"nome\": \"Propriedade 5\",\r\n            \"cnpj\": \"55555555555555\"\r\n        },\r\n        \"laboratorio\": {\r\n            \"id\": 4,\r\n            \"nome\": \"Laboratório 4\"\r\n        }\r\n    }"
+				},
+				"url": {
+					"raw": "http://localhost:8081/registros/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"registros",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "06_AGROTIS_PUT_ID-2",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"nome\": \"NATAN ALTERADO\",\r\n        \"observacoes\": \"\",\r\n        \"dataInicial\": \"2019-05-05T18:00:00\",\r\n        \"dataFinal\": \"2019-05-05T18:00:00\",\r\n        \"propriedade\": {\r\n            \"id\": 1,\r\n            \"nome\": \"Propriedade 1\",\r\n            \"cnpj\": \"11111111111\"\r\n        },\r\n        \"laboratorio\": {\r\n            \"id\": 2,\r\n            \"nome\": \"Laboratório 2\"\r\n        }\r\n    }"
+				},
+				"url": {
+					"raw": "http://localhost:8081/registros/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"registros",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "07_AGROTIS_PUT_ID-2_ERROR",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"nome\": \"\",\r\n        \"observacoes\": \"\",\r\n        \"dataInicial\": \"2019-05-05T18:00:00\",\r\n        \"dataFinal\": \"2019-05-05T18:00:00\",\r\n        \"propriedade\": {\r\n            \"id\": 1,\r\n            \"nome\": \"Propriedade 1\",\r\n            \"cnpj\": \"11111111111\"\r\n        },\r\n        \"laboratorio\": {\r\n            \"id\": 2,\r\n            \"nome\": \"Laboratório 2\"\r\n        }\r\n    }"
+				},
+				"url": {
+					"raw": "http://localhost:8081/registros/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"registros",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "08_AGROTIS_DELETE_ID-1",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"nome\": \"\",\r\n        \"observacoes\": \"\",\r\n        \"dataInicial\": \"2019-05-05T18:00:00\",\r\n        \"dataFinal\": \"2019-05-05T18:00:00\",\r\n        \"propriedade\": {\r\n            \"id\": 1,\r\n            \"nome\": \"Propriedade 1\",\r\n            \"cnpj\": \"11111111111\"\r\n        },\r\n        \"laboratorio\": {\r\n            \"id\": 2,\r\n            \"nome\": \"Laboratório 2\"\r\n        }\r\n    }"
+				},
+				"url": {
+					"raw": "http://localhost:8081/registros/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"registros",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "09_AGROTIS_GET_UPDATED",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"nome\": \"\",\r\n        \"observacoes\": \"\",\r\n        \"dataInicial\": \"2019-05-05T18:00:00\",\r\n        \"dataFinal\": \"2019-05-05T18:00:00\",\r\n        \"propriedade\": {\r\n            \"id\": 1,\r\n            \"nome\": \"Propriedade 1\",\r\n            \"cnpj\": \"11111111111\"\r\n        },\r\n        \"laboratorio\": {\r\n            \"id\": 2,\r\n            \"nome\": \"Laboratório 2\"\r\n        }\r\n    }"
+				},
+				"url": {
+					"raw": "http://localhost:8081/registros",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"registros"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
