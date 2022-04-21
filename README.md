@@ -5,7 +5,7 @@ Linguagem: Java
 
 Framework: Spring Boot
 
-IDE: Eclipse
+IDE utilizada: Eclipse
 
 Caminho de acesso:
 * **GET e POST**
