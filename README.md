@@ -11,7 +11,7 @@ Caminho de acesso:
 * **GET e POST**
 http://localhost:8081/registros
 
-* **GET, PUT e DELETE **
+* **GET, PUT e DELETE**
 http://localhost:8081/registros/{id}
 
 
