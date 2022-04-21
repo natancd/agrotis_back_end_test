@@ -1,5 +1,5 @@
 # agrotis_back_end_test
-API para ser utilizada na construção de uma tela de serviços CRUD, com base nos requisitos solicitados.
+API para ser utilizada na construção de uma tela de serviços CRUD.
 
 Linguagem: Java
 
